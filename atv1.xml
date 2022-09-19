@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article>
+<article
+  xmlns="http://docbook.org/ns/docbook" version="5.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <info>
+    <title>Atividade 1 - Estatística Computacional 2</title>
+  </info>
+  <section xml:id="tabela-de-dados">
+    <title>Tabela de dados</title>
+    <para>
+      Informações sobre estado civil, grau de instrução, número de
+      filhos, salário (expresso como fração do salário mínimo), idade
+      (medida em anos e meses) e procedência de 36 empregados da seção
+      de orçamentos da Companhia MB.
+    </para>
+    <informaltable>
+      <tgroup cols="7">
+        <colspec colwidth="14*" align="left" />
+        <colspec colwidth="14*" align="left" />
+        <colspec colwidth="14*" align="left" />
+        <colspec colwidth="14*" align="left" />
+        <colspec colwidth="14*" align="left" />
+        <colspec colwidth="14*" align="left" />
+        <colspec colwidth="14*" align="left" />
+        <thead>
+          <row>
+            <entry>
+              Estado civil
+            </entry>
+            <entry>
+              Grau de instrução
+            </entry>
+            <entry>
+              N° de filhos
+            </entry>
+            <entry>
+              Salário (x sal. min.)
+            </entry>
+            <entry>
+              anos
+            </entry>
+            <entry>
+              meses
+            </entry>
+            <entry>
+              Região de procedência
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              4,00
+            </entry>
+            <entry>
+              26
+            </entry>
+            <entry>
+              03
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              1
+            </entry>
+            <entry>
+              4,56
+            </entry>
+            <entry>
+              32
+            </entry>
+            <entry>
+              10
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              5,25
+            </entry>
+            <entry>
+              36
+            </entry>
+            <entry>
+              05
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              5,73
+            </entry>
+            <entry>
+              20
+            </entry>
+            <entry>
+              10
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              6,26
+            </entry>
+            <entry>
+              40
+            </entry>
+            <entry>
+              07
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              0
+            </entry>
+            <entry>
+              6,66
+            </entry>
+            <entry>
+              28
+            </entry>
+            <entry>
+              00
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              6,86
+            </entry>
+            <entry>
+              41
+            </entry>
+            <entry>
+              00
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              7,39
+            </entry>
+            <entry>
+              43
+            </entry>
+            <entry>
+              04
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              1
+            </entry>
+            <entry>
+              7,59
+            </entry>
+            <entry>
+              34
+            </entry>
+            <entry>
+              10
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              7,44
+            </entry>
+            <entry>
+              23
+            </entry>
+            <entry>
+              06
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              8,12
+            </entry>
+            <entry>
+              33
+            </entry>
+            <entry>
+              06
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              8,46
+            </entry>
+            <entry>
+              27
+            </entry>
+            <entry>
+              11
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              8,74
+            </entry>
+            <entry>
+              37
+            </entry>
+            <entry>
+              05
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              3
+            </entry>
+            <entry>
+              8,95
+            </entry>
+            <entry>
+              44
+            </entry>
+            <entry>
+              02
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              0
+            </entry>
+            <entry>
+              9,13
+            </entry>
+            <entry>
+              30
+            </entry>
+            <entry>
+              05
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              9,35
+            </entry>
+            <entry>
+              38
+            </entry>
+            <entry>
+              08
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              1
+            </entry>
+            <entry>
+              9,77
+            </entry>
+            <entry>
+              31
+            </entry>
+            <entry>
+              07
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              9,80
+            </entry>
+            <entry>
+              39
+            </entry>
+            <entry>
+              07
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              superior
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              10,53
+            </entry>
+            <entry>
+              25
+            </entry>
+            <entry>
+              08
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              10,76
+            </entry>
+            <entry>
+              37
+            </entry>
+            <entry>
+              04
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              1
+            </entry>
+            <entry>
+              11,06
+            </entry>
+            <entry>
+              30
+            </entry>
+            <entry>
+              09
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              11,59
+            </entry>
+            <entry>
+              34
+            </entry>
+            <entry>
+              02
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              12,00
+            </entry>
+            <entry>
+              41
+            </entry>
+            <entry>
+              00
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              superior
+            </entry>
+            <entry>
+              0
+            </entry>
+            <entry>
+              12,79
+            </entry>
+            <entry>
+              26
+            </entry>
+            <entry>
+              01
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              13,23
+            </entry>
+            <entry>
+              32
+            </entry>
+            <entry>
+              05
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              13,60
+            </entry>
+            <entry>
+              35
+            </entry>
+            <entry>
+              00
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              ensino fundamental
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              13,85
+            </entry>
+            <entry>
+              46
+            </entry>
+            <entry>
+              07
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              0
+            </entry>
+            <entry>
+              14,69
+            </entry>
+            <entry>
+              29
+            </entry>
+            <entry>
+              08
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              5
+            </entry>
+            <entry>
+              14,71
+            </entry>
+            <entry>
+              40
+            </entry>
+            <entry>
+              06
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              15,99
+            </entry>
+            <entry>
+              35
+            </entry>
+            <entry>
+              10
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              superior
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              16,22
+            </entry>
+            <entry>
+              31
+            </entry>
+            <entry>
+              05
+            </entry>
+            <entry>
+              outra
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              1
+            </entry>
+            <entry>
+              16,61
+            </entry>
+            <entry>
+              36
+            </entry>
+            <entry>
+              04
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              superior
+            </entry>
+            <entry>
+              3
+            </entry>
+            <entry>
+              17,26
+            </entry>
+            <entry>
+              43
+            </entry>
+            <entry>
+              07
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              solteiro
+            </entry>
+            <entry>
+              superior
+            </entry>
+            <entry>
+              -
+            </entry>
+            <entry>
+              18,75
+            </entry>
+            <entry>
+              33
+            </entry>
+            <entry>
+              07
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              ensino médio
+            </entry>
+            <entry>
+              2
+            </entry>
+            <entry>
+              19,40
+            </entry>
+            <entry>
+              48
+            </entry>
+            <entry>
+              11
+            </entry>
+            <entry>
+              capital
+            </entry>
+          </row>
+          <row>
+            <entry>
+              casado
+            </entry>
+            <entry>
+              superior
+            </entry>
+            <entry>
+              3
+            </entry>
+            <entry>
+              23,30
+            </entry>
+            <entry>
+              42
+            </entry>
+            <entry>
+              02
+            </entry>
+            <entry>
+              interior
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </section>
+  <section xml:id="divisão-entre-variáveis-quantitativas-e-qualitativas">
+    <title>Divisão entre variáveis quantitativas e qualitativas</title>
+    <section xml:id="variáveis-qualitativas">
+      <title><emphasis role="strong">Variáveis
+      qualitativas</emphasis></title>
+      <para>
+        São aquelas cujos valores podem ser separados em diferentes
+        categorias que se distinguem por alguma característica não
+        numérica.
+      </para>
+      <para>
+        <emphasis role="strong">Em nossa tabela elas são</emphasis>:
+        Estado civil, Grau de instrução, N° de filhos, Região de
+        procedência
+      </para>
+    </section>
+    <section xml:id="variáveis-quantitativas">
+      <title><emphasis role="strong">Variáveis
+      quantitativas</emphasis></title>
+      <para>
+        Que exprime ou determina quantidade. São aquelas cujos valores
+        são expressos em números.
+      </para>
+      <para>
+        <emphasis role="strong">Em nossa tabela elas são</emphasis>:
+        Salário (x sal. min.), anos, meses
+      </para>
+    </section>
+  </section>
+  <section xml:id="associação-entre-duas-variáveis-qualitativas">
+    <title>Associação entre duas variáveis qualitativas</title>
+    <section xml:id="tabela-de-frequência-dupla">
+      <title>Tabela de frequência dupla</title>
+      <informaltable>
+        <tgroup cols="4">
+          <colspec align="left" />
+          <colspec align="left" />
+          <colspec align="left" />
+          <colspec align="left" />
+          <thead>
+            <row>
+              <entry>
+              </entry>
+              <entry>
+                Capital
+              </entry>
+              <entry>
+                Interior
+              </entry>
+              <entry>
+                Outra
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis role="strong">Fundamental</emphasis>
+              </entry>
+              <entry>
+                4
+              </entry>
+              <entry>
+                3
+              </entry>
+              <entry>
+                5
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="strong">Médio</emphasis>
+              </entry>
+              <entry>
+                5
+              </entry>
+              <entry>
+                7
+              </entry>
+              <entry>
+                6
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="strong">Superior</emphasis>
+              </entry>
+              <entry>
+                2
+              </entry>
+              <entry>
+                2
+              </entry>
+              <entry>
+                2
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section xml:id="tabela-de-frequência-dupla-relativa">
+      <title>Tabela de frequência dupla relativa</title>
+      <informaltable>
+        <tgroup cols="4">
+          <colspec align="left" />
+          <colspec align="left" />
+          <colspec align="left" />
+          <colspec align="left" />
+          <thead>
+            <row>
+              <entry>
+              </entry>
+              <entry>
+                Capital
+              </entry>
+              <entry>
+                Interior
+              </entry>
+              <entry>
+                Outra
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis role="strong">Fundamental</emphasis>
+              </entry>
+              <entry>
+                0.11111111
+              </entry>
+              <entry>
+                0.08333333
+              </entry>
+              <entry>
+                0.13888889
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="strong">Médio</emphasis>
+              </entry>
+              <entry>
+                0.13888889
+              </entry>
+              <entry>
+                0.19444444
+              </entry>
+              <entry>
+                0.16666667
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="strong">Superior</emphasis>
+              </entry>
+              <entry>
+                0.05555556
+              </entry>
+              <entry>
+                0.05555556
+              </entry>
+              <entry>
+                0.05555556
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section xml:id="gráfico-de-barras">
+      <title>Gráfico de Barras</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="atv1_files/figure-docbook/unnamed-chunk-6-1.png" />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+    </section>
+    <section xml:id="teste-de-independência-qui-quadrado">
+      <title>Teste de independência (qui-quadrado)</title>
+      <para>
+        Esse teste permite verificar se há associação entre essas duas
+        variáveis.
+      </para>
+      <para>
+        <emphasis>H</emphasis><subscript>0</subscript>: o Grau de
+        instrução não depende da região – p &gt; 0.05
+      </para>
+      <para>
+        <emphasis>H</emphasis><subscript>1</subscript>: o Grau de
+        instrução depende da região - p ≤ 0.05
+      </para>
+      <section xml:id="resultado-do-teste">
+        <title><emphasis role="strong">Resultado do
+        teste</emphasis></title>
+        <para>
+          Pearson’s Chi-squared test
+        </para>
+        <para>
+          <emphasis role="strong">X-squared</emphasis> = 0.66142,
+          <emphasis role="strong">df</emphasis> = 4,
+          <emphasis role="strong">p-value</emphasis> = 0.956
+        </para>
+        <para>
+          Logo, não podemos aceitar
+          <emphasis>H</emphasis><subscript>0</subscript>
+        </para>
+      </section>
+    </section>
+  </section>
+  <section xml:id="associação-entre-duas-variáveis-quantitativas">
+    <title>Associação entre duas variáveis quantitativas</title>
+    <section xml:id="coeficiente-de-correlação">
+      <title>Coeficiente de correlação</title>
+      <para>
+        O Coeficiente de Correlação mede o grau da correlação entre duas
+        variáveis de escala métrica. Normalmente assume valores somente
+        entre -1 e 1. Tem como fórmula:
+      </para>
+    </section>
+    <section xml:id="section">
+      <title><inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-50a9c8308553ebee7e5cb19efedb0a34_l3.png" />
+        </imageobject>
+      </inlinemediaobject></title>
+      <para>
+        A correlação entre as variáveis <literal>Salário</literal> e
+        <literal>anos</literal> tem um Coeficiente de Correlação de
+        <emphasis role="strong">0.3633622</emphasis>, logicamente, a
+        correlação de <literal>Salário</literal> e
+        <literal>Salário</literal> ou entre <literal>anos</literal> e
+        <literal>anos</literal> seria 1, como podemos ver abaixo:
+      </para>
+      <informaltable>
+        <tgroup cols="3">
+          <colspec align="left" />
+          <colspec align="left" />
+          <colspec align="left" />
+          <thead>
+            <row>
+              <entry>
+              </entry>
+              <entry>
+                Salário
+              </entry>
+              <entry>
+                Anos
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis role="strong">Salário</emphasis>
+              </entry>
+              <entry>
+                1.0000000
+              </entry>
+              <entry>
+                0.3633622
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <emphasis role="strong">Anos</emphasis>
+              </entry>
+              <entry>
+                0.3633622
+              </entry>
+              <entry>
+                1.0000000
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+      <para>
+        Podemos ver que as variáveis <literal>Salário</literal> e
+        <literal>anos</literal> tem uma correlação de
+        <emphasis role="strong">0.3633622</emphasis>, que é considerada
+        fraca
+      </para>
+    </section>
+    <section xml:id="teste-do-coeficiente-de-correlação">
+      <title>Teste do coeficiente de correlação</title>
+      <para>
+        Esse teste serve para checarmos a eficácia do coeficiente de
+        correlação, e tem como hipoteses:
+      </para>
+      <para>
+        <emphasis>H</emphasis><subscript>0</subscript>: correlação
+        verdadeiramente = 0: p &gt; 0,05
+      </para>
+      <para>
+        <emphasis>H</emphasis><subscript>1</subscript>: correlação
+        verdadeiramente ≠ 0: p ≤ 0,05
+      </para>
+      <para>
+        t = 2.2742, df = 34, <emphasis role="strong">p-value =
+        0.02938</emphasis>
+      </para>
+      <para>
+        Logo, rejeitamos <emphasis>H</emphasis><subscript>0</subscript>.
+      </para>
+    </section>
+    <section xml:id="covariância">
+      <title>Covariância</title>
+      <para>
+        A covariância é uma medida matemática na qual é possível
+        compararmos duas variáveis, permitindo entender como elas se
+        relacionam entre si.
+      </para>
+      <para>
+        A covariância tem como fórmula
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-e8000aef3653a8b3c4de0f064955d138_l3.png" />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        que se aplicada aos nossos dados nos retorna o valor de
+        <emphasis role="strong">11.23067</emphasis>
+      </para>
+    </section>
+    <section xml:id="diagrama-de-dispersão">
+      <title>Diagrama de dispersão</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="atv1_files/figure-docbook/unnamed-chunk-12-1.png" />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+    </section>
+  </section>
+  <section xml:id="associação-entre-uma-variável-qualitativa-fator-de-variação-e-outra-quantitativa">
+    <title>Associação entre uma variável qualitativa (fator de variação)
+    e outra quantitativa</title>
+    <para>
+      As variáveis escolhidas foram <literal>Grau de instrução</literal>
+      (qualitativa) e <literal>Salário</literal> (quantitativa).
+    </para>
+    <para>
+      Sobre a <emphasis role="strong">variável quantitativa</emphasis>,
+      podemos tirar algumas medidas importantes.
+    </para>
+    <para>
+      Os quartis são medidas que dividem uma amostra de dados em quatro
+      partes iguais. É útil para entendermos um pouco mais sobre
+      dispersão e tendência central dos dados.
+    </para>
+    <para>
+      Os <emphasis role="strong">quartis</emphasis> da variável
+      <literal>Salário</literal> são:
+    </para>
+    <para>
+      <emphasis role="strong">1° quartil</emphasis>: 7,5525
+    </para>
+    <para>
+      <emphasis role="strong">2° quartil</emphasis>: 10,1650 (mediana)
+    </para>
+    <para>
+      <emphasis role="strong">3° quartil</emphasis>: 14.0600
+    </para>
+    <para>
+      E a amplitude interquartílica é 6,5075 ou 14,0600 - 7,5525
+    </para>
+    <para>
+      A variável tem como <emphasis role="strong">média</emphasis> o
+      valor de 11.12222 e <emphasis role="strong">mediana</emphasis> de
+      10,165
+    </para>
+    <para>
+      Agora, sobre a <emphasis role="strong">variável
+      qualitativa</emphasis> podemos montar uma tabela de frequência
+    </para>
+    <informaltable>
+      <tgroup cols="3">
+        <colspec align="left" />
+        <colspec align="left" />
+        <colspec align="left" />
+        <thead>
+          <row>
+            <entry>
+            </entry>
+            <entry>
+              Frequência
+            </entry>
+            <entry>
+              Proporção
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              <emphasis role="strong">Fundamental</emphasis>
+            </entry>
+            <entry>
+              12
+            </entry>
+            <entry>
+              33,3
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <emphasis role="strong">Médio</emphasis>
+            </entry>
+            <entry>
+              18
+            </entry>
+            <entry>
+              50
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <emphasis role="strong">Superior</emphasis>
+            </entry>
+            <entry>
+              6
+            </entry>
+            <entry>
+              16,7
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+    <para>
+      Vamos agora usar dois gráficos para retratar um pouco da relação
+      entre as variáveis. o gráfico de médias retrata as médias e o
+      desvio padrão de cada grau de ensino
+    </para>
+    <section xml:id="gráfico-de-médias-com-desvio-padrão">
+      <title>Gráfico de médias com desvio padrão</title>
+      <para>
+        Gráfico de médias retrata as médias e o desvio padrão de cada
+        grau de ensino
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="atv1_files/figure-docbook/unnamed-chunk-16-1.png" />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+    </section>
+    <section xml:id="boxplot">
+      <title>Boxplot</title>
+      <para>
+        o boxplot contribui muito em uma análise exploratória por
+        apresentar uma carga muito grande de informações, como limite
+        inferior e superior dos dados, presença de dados discrepantes e
+        os quartis da amostra.
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="atv1_files/figure-docbook/unnamed-chunk-18-1.png" />
+          </imageobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        Os dois gráficos exemplificam a significativa relação entre
+        <literal>Salário</literal> e
+        <literal>Grau de instrução</literal>.
+      </para>
+    </section>
+  </section>
+</article>
